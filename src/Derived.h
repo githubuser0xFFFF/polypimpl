@@ -26,7 +26,7 @@ public:
 	friend bool operator==(const CDerived& l, const CDerived& r);
 
 private:
-	class Private;
+	class PrivateImpl;
 	PIMPL_DECLARE_PRIVATE(CDerived);
 };
 

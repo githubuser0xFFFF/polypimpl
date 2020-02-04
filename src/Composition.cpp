@@ -12,7 +12,7 @@
 
 using namespace jbcoe;
 
-class CComposition::Private
+class CComposition::PrivateImpl
 {
 public:
 	polymorphic_value<CBase> DerivedPtr;
@@ -21,7 +21,7 @@ public:
 
 
 CComposition::CComposition()
-	: d_ptr(make_polymorphic_value<CComposition::Private>())
+	: d_ptr(make_polymorphic_value<CComposition::PrivateImpl>())
 {
 
 }

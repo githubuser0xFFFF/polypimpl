@@ -26,8 +26,8 @@ public:
 	CBase* basePtr();
 
 protected:
-	class Private;
-	jbcoe::polymorphic_value<CComposition::Private> d_ptr;
+	class PrivateImpl;
+	jbcoe::polymorphic_value<CComposition::PrivateImpl> d_ptr;
 
 private:
 	PIMPL_DECLARE_PRIVATE(CComposition);

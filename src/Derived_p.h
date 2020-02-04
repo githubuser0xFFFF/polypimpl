@@ -14,7 +14,7 @@
 #include "Base_p.h"
 
 
-class CDerived::Private : public CBase::Private
+class CDerived::PrivateImpl : public CBase::PrivateImpl
 {
 private:
 	PIMPL_DECLARE_PUBLIC(CDerived);

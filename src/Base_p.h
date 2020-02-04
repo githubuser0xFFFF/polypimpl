@@ -13,9 +13,9 @@
 #include "Base.h"
 
 /**
- * @brief
+ * Private data of CBase
  */
-class CBase::Private
+class CBase::PrivateImpl
 {
 protected:
 	CBase* q_ptr;

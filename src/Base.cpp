@@ -15,7 +15,7 @@ using namespace jbcoe;
 
 
 CBase::CBase(BasePrivatePtr _priv)
-	: d_ptr(_priv ? _priv : make_polymorphic_value<CBase::Private>())
+	: d_ptr(_priv ? _priv : make_polymorphic_value<CBase::PrivateImpl>())
 {
 
 }

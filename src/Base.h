@@ -14,11 +14,14 @@
 
 
 //===========================================================================
+/**
+ * A base class with a polymorphic private data pointer
+ */
 class CBase
 {
 protected:
-	class Private;
-	using BasePrivatePtr = jbcoe::polymorphic_value<CBase::Private>;
+	class PrivateImpl;
+	using BasePrivatePtr = jbcoe::polymorphic_value<CBase::PrivateImpl>;
 
 public:
 	CBase(BasePrivatePtr _priv = BasePrivatePtr());
@@ -31,7 +34,7 @@ public:
 	friend bool operator==(const CBase& l, const CBase& r);
 
 protected:
-	jbcoe::polymorphic_value<CBase::Private> d_ptr;
+	jbcoe::polymorphic_value<CBase::PrivateImpl> d_ptr;
 
 private:
 	PIMPL_DECLARE_PRIVATE(CBase);
