@@ -13,7 +13,7 @@
 #include "Base.h"
 
 /**
- * Private data of CBase
+ * Private data class for CBase
  */
 class CBase::PrivateImpl
 {
@@ -25,6 +25,7 @@ private:
 
 public:
 	int BaseIntValue = 1;
+	PrivateImpl(CBase* q) : q_ptr(q) {}
 };
 
 //---------------------------------------------------------------------------

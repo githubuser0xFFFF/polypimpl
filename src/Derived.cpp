@@ -17,7 +17,7 @@ using namespace jbcoe;
 
 
 CDerived::CDerived()
-	: CBase(make_polymorphic_value<CBase::PrivateImpl, CDerived::PrivateImpl>())
+	: CBase(make_polymorphic_value<CBase::PrivateImpl, CDerived::PrivateImpl>(this))
 {
 
 }

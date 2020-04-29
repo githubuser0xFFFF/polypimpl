@@ -21,6 +21,7 @@ private:
 
 public:
 	double DerivedDoubleValue = 2.2;
+	PrivateImpl(CDerived* q) : CBase::PrivateImpl(q) {}
 };
 
 //---------------------------------------------------------------------------
